@@ -3,7 +3,7 @@
 <head>
     <meta charset="ISO-8859-1">
     <title>Update Page</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" th:href="@{/css/update-con.css}">
     <script type = "text/javascript" >
         function preventBack(){
           window.history.forward();
@@ -11,66 +11,6 @@
         setTimeout("preventBack()", 0);
         window.onunload = function () { null };
     </script>
-
-    <style>
-        body {
-    background-color: #aaaaaa;
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    width: 400px;
-    height: 450px;
-    margin: 100px auto;
-    padding: 20px;
-    background: #cccccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="email"],
-input[type="password"] {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    width: 30%;
-    padding: 10px;
-    margin-left: 130px;
-    margin-top: 20px;
-    margin-bottom: 80px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-        .regis{
-        margin-left: 115px;
-        }
-
-    </style>
-
-
 </head>
 <body>
 <div class="container mt-5">

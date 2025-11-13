@@ -3,7 +3,7 @@
 <head>
     <meta charset="ISO-8859-1">
     <title>User Registration</title>
-    <link rel="stylesheet" href="/css/user.css">
+    <link rel="stylesheet" th:href="@{/css/regis.css}">
     <script type = "text/javascript" >
         function preventBack(){
           window.history.forward();
@@ -11,126 +11,6 @@
         setTimeout("preventBack()", 0);
         window.onunload = function () { null };
     </script>
-
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        .container {
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            padding: 40px 50px;
-            width: 400px;
-            text-align: center;
-        }
-
-        h2 {
-            margin-bottom: 25px;
-            color: #333333;
-        }
-
-        .form-group {
-            text-align: left;
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 5px;
-            color: #444;
-        }
-
-        input[type="email"],
-        input[type="password"],
-        input[type="text"],
-        input[type="number"],
-        select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 15px;
-            box-sizing: border-box;
-            transition: border-color 0.3s ease;
-        }
-
-        input:focus, select:focus {
-            border-color: #ff4d4d;
-            outline: none;
-        }
-
-        button,
-        .btn {
-            display: inline-block;
-            background-color: #ff4d4d;
-            color: white;
-            padding: 10px 18px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-            text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-
-        button:hover,
-        .btn:hover {
-            background-color: #ff1a1a;
-            transform: scale(1.03);
-        }
-
-        .btn-secondary {
-            background-color: #6c757d;
-        }
-
-        .btn-secondary:hover {
-            background-color: #5a6268;
-        }
-
-        .alert {
-            margin-bottom: 15px;
-            padding: 12px;
-            border-radius: 6px;
-            font-size: 14px;
-        }
-
-        .alert-danger {
-            background-color: #f8d7da;
-            color: #721c24;
-        }
-
-        .alert-info {
-            background-color: #d1ecf1;
-            color: #0c5460;
-        }
-
-        a {
-            color: #ff4d4d;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #555;
-        }
-
-    </style>
 
 </head>
 <body>

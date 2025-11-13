@@ -1,0 +1,50 @@
+body {
+    background-color: #aaaaaa;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #bbbbbb;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #66b3ff;
+    }
+.center-box {
+      height: 500px;
+      width: 40%;
+      margin-top: 40px;
+      margin-left: 30%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      text-align: center;
+    margin: 20px auto;
+    background-color: #bbbbbb;
+    border-radius: 10px;
+    padding: 10px 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
+
+.product-btn{
+      display: flex;
+      height: 20px;
+      background-color: #999999;
+      height: 20px;
+     border-radius: 10px;
+}
+
+button:hover {
+    background-color: green;
+}
