@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <script type = "text/javascript" >
+        function preventBack(){
+          window.history.forward();
+        }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+</head>
+<body>
+<nav>
+<div class="container">
+    Welcome<a th:href="@{/user/profile}" class="text-info text-decoration-none">
+    <strong sec:authentication="principal.username"></strong>
+</a>
+</div>
+<div><a th:href="@{/logout}">Logout</a></div>
+</nav>
+
+<div class="center-box">
+    <a href="/product">
+        <button class="get-started-btn">
+            Products
+        </button>
+    </a>
+    <a href="/category">
+        <button class="get-started-btn">
+            Category
+        </button>
+    </a>
+</div>
+</body>
+</html>
