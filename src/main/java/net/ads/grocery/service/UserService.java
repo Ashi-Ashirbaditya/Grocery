@@ -28,6 +28,11 @@ public class UserService implements UserDetailsService {   // ✅ implements int
     private BCryptPasswordEncoder passwordEncoder;
 
     public User save(UserRegistration registration) {
+
+        if (userRepository.findByEmail(registration.getEmail()) != null) {
+            throw new IllegalArgumentException("Email already registered!");
+        }
+
         User user = new User(
                 registration.getFirstName(),
                 registration.getLastName(),

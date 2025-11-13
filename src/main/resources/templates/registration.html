@@ -35,15 +35,18 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Register</button>
-    </form>
+    </form><a th:href="@{/}"> Back to Login Page</a>
+    <!-- success message -->
+    <div th:if="${success}">
+        <div class="alert alert-info">You've successfully registered
+            <a th:href="@{/login}">Login</a>
+        </div>
+    </div>
+
 </div>
 
-<a th:href="@{/}"> Back to Login Page</a>
-<!-- success message -->
-<div th:if="${success}">
-    <div class="alert alert-info">You've successfully registered
-        <a th:href="@{/login}">Login</a>
-    </div>
+<div th:if="${error}">
+    <div class="alert alert-danger" th:text="${error}"></div>
 </div>
 
 </body>
