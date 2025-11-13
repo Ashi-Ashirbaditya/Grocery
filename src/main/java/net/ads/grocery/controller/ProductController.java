@@ -102,7 +102,7 @@ public class ProductController {
                                 @RequestParam("sortField") String sortField,
                                 @RequestParam("sortDir") String sortDir,
                                 Model model) {
-        int pageSize = 5;
+        int pageSize = 4;
 
         Page< Products > page = productService.findPaginated(pageNo, pageSize, sortField, sortDir);
         List< Products > listProducts = page.getContent();
@@ -124,7 +124,7 @@ public class ProductController {
                                 @RequestParam("sortField") String sortField,
                                 @RequestParam("sortDir") String sortDir,
                                 Model model) {
-        int pageSize = 5;
+        int pageSize = 4;
 
         Page< Category > page = categoryService.findPaginated2(pageNo2, pageSize, sortField, sortDir);
         List< Category > listCategory = page.getContent();
