@@ -105,7 +105,14 @@ nav{
         display: flex;
 	   justify-content: flex-end;
 	   padding: 10px;
+	   position: fixed;
+       top: 72%;
 }
+ .col-sm-1 {
+    position: fixed;
+    top: 70%;
+ }
+
 
 a :hover{
      background-color: #0055ff;
